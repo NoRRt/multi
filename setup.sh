@@ -210,6 +210,7 @@ echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 2
 clear
 wget https://raw.githubusercontent.com/DryanZ/multi/aio/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget -q -O /usr/bin/xtls "https://raw.githubusercontent.com/DryanZ/multi/aio/xtls/xtls.sh" && chmod +x /usr/bin/xtls && xtls && rm -f /usr/bin/xtls
 #Set Backup
 echo -e "${tyblue}.------------------------------------------.${NC}"
 echo -e "${tyblue}|                SET BACKUP                |${NC}"
@@ -304,7 +305,7 @@ echo "   - Shadowsocks GRPC        : 443"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "    [INFORMASI XRAY]"  | tee -a log-install.txt
 echo "    ----------------" | tee -a log-install.txt
-echo "   - Xray Tcp XTLS           : 443"  | tee -a log-install.txt
+echo "   - VLess TCP XTLS          : 443"  | tee -a log-install.txt
 echo "   - Xray Vmess Ws Tls       : 443"  | tee -a log-install.txt
 echo "   - Xray Vless Ws Tls       : 443"  | tee -a log-install.txt
 echo "   - Xray Vmess Ws None Tls  : 80"  | tee -a log-install.txt
