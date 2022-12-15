@@ -210,7 +210,7 @@ echo -e "${tyblue}'------------------------------------------'${NC}"
 sleep 2
 clear
 wget https://raw.githubusercontent.com/DryanZ/multi/aio/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget -q -O /usr/bin/xtls "https://raw.githubusercontent.com/DryanZ/multi/aio/xtls/xtls.sh" && chmod +x /usr/bin/xtls && xtls && rm -f /usr/bin/xtls
+wget https://raw.githubusercontent.com/DryanZ/multi/aioxtls/xtls.sh && chmod +x xtls.sh && ./xtls.sh
 #Set Backup
 echo -e "${tyblue}.------------------------------------------.${NC}"
 echo -e "${tyblue}|                SET BACKUP                |${NC}"
